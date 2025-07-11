@@ -80,11 +80,6 @@ For collaboration or suggestions, feel free to contact us!
 
 ## 🌀 Diffusion Models in Skin Imaging
 
-| Model | Task | Highlights | Link |
-|-------|------|------------|------|
-| **BS-LDM (JBHI 2025)** | Bone suppression | High-res latent conditional model | [PDF](https://openreview.net/forum?id=3b9SKkRAKw) |
-| **BS-Diff (ISBI 2024)** | Bone suppression | Conditional diffusion, CXR | [PDF](https://openreview.net/forum?id=3b9SKkRAKw) |
-| **LeFusion** | Lesion synthesis | Disease-focused region control | [Code](https://github.com/M3DV/LeFusion) |
 
 ---
 
