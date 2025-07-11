@@ -11,13 +11,11 @@
 ---
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/openmedialab/skin-cancer-survey-assets/main/ham_melanoma.jpg" width="45%">
-  <img src="https://raw.githubusercontent.com/openmedialab/skin-cancer-survey-assets/main/ham_nevus.jpg" width="45%">
+  <img src="路径/ca651cd7-36b6-4516-a160-13c0aed8347d.png" width="80%">
 </div>
 
 <div align="center">
-  <b>左图：黑色素瘤（Malignant Melanoma）；右图：色素痣（Benign Nevus）。</b><br/>
-  <sub>图像来源：Kaggle HAM10000 数据集，稳定图床托管。</sub>
+  <sub>上图展示了 HAM10000 数据集中皮肤病变图像的部分示例，包括良性痣与恶性黑色素瘤等多种类型。</sub>
 </div>
 
 ---
@@ -90,16 +88,15 @@ For collaboration or suggestions, feel free to contact us!
 | Multiscale Fusion Transformer for Lesion Classification | 分类 | Transformer + 多尺度融合 | TMI | ISIC 2019 | [Search](https://scholar.google.com/scholar?q=Multiscale+Fusion+Transformer+for+Lesion+Classification+in+Skin+Cancer) |
 
 
-## 🧬 Skin Cancer Datasets
+## 📊 常用皮肤癌数据集总览（2024）
 
-| Dataset | Resolution | Task | Classes | Public | Link |
-|---------|------------|------|---------|--------|------|
-| ISIC 2016–2020 | Varies | Class / Seg / Detect | ~7 | ✅ | [ISIC Archive](https://www.isic-archive.com) |
-| HAM10000 | 600×450 | Classification | 7 | ✅ | [Kaggle](https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000) |
-| PAD-UFES-20 | Varies | Class / Meta | 6 | ✅ | [Kaggle](https://www.kaggle.com/andrewmvd/ufes-skin-lesion) |
-| Derm7pt | 1024×768 | Multimodal | 8 + Metadata | ✅ | [Official Website](https://www.derm7pt.org) |
-| PH2 | 768×560 | Segmentation | 2 | ✅ | [PH2 Dataset](https://www.fc.up.pt/addi/ph2%20database.html) |
-| ISIC 2024 Challenge | Varies | Multitask | TBD | ✅ | [Challenge Website](https://challenge.isic-archive.com) |
+| 数据集名称 | 数据集特点 | 使用场景 | 链接 |
+|------------|------------|----------|------|
+| **HAM10000** | 最经典数据集，含10000张皮肤镜图像 | 多类皮肤病变分类任务 | [GitHub](https://github.com/ptschandl/HAM10000_dataset) |
+| **ISIC Archive** | 最新权威图像资源库，支持挑战赛数据 | 分割、分类、检测均适用 | [GitHub](https://github.com/udacity/dermatologist-ai/blob/master/isic_challenge) |
+| **MED-NODE** | 荷兰格罗宁根大学开发，图像分辨率较高 | 黑色素瘤 vs 痣 二分类 | [官网](https://www.cs.rug.nl/~imaging/databases/melanoma/) |
+| **PH2** | 葡萄牙数据集，含边界分割掩码 | 病灶分割与颜色分析 | [下载链接](https://gitcode.com/open-source-toolkit/3f18e/PH2Dataset) |
+| **DermaMNIST** | MedMNIST子集，适合轻量模型实验 | 轻量CNN/迁移学习测试 | [官网](https://medmnist.com/) |
 
 ---
 
