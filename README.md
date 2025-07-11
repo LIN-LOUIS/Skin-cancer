@@ -11,13 +11,13 @@
 ---
 
 <div align="center">
-  <img src="https://isic-archive.com/images/isic_archive_banner.jpg" width="48%">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/MelanomaTypes.png" width="48%">
+  <img src="https://raw.githubusercontent.com/openmedialab/skin-cancer-survey-assets/main/ham_melanoma.jpg" width="45%">
+  <img src="https://raw.githubusercontent.com/openmedialab/skin-cancer-survey-assets/main/ham_nevus.jpg" width="45%">
 </div>
 
 <div align="center">
-  <b>左图：ISIC数据库中真实的皮肤病变图像；右图：黑色素瘤的常见类型示意图。</b><br/>
-  <sub>图源分别来自 ISIC Archive 和 Wikimedia Commons。</sub>
+  <b>左图：黑色素瘤（Malignant Melanoma）；右图：色素痣（Benign Nevus）。</b><br/>
+  <sub>图像来源：Kaggle HAM10000 数据集，稳定图床托管。</sub>
 </div>
 
 ---
@@ -26,7 +26,8 @@
 
 ---
 
-## 🌞 简介（Introduction）
+
+## 简介（Introduction）
 
 本项目整理并持续更新皮肤癌研究中具有代表性的**深度学习方法、数据集、代码与论文资源**，特别关注 2024–2025 年度的新进展，包括：
 
