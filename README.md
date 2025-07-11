@@ -1,4 +1,3 @@
-# Skin-cancer
 # Skin Cancer Research: A Deep Survey (Keep Updating)
 
 <div align="center">
@@ -9,11 +8,36 @@
 
 </div>
 
+---
+
 <div align="center">
-  <img src="https://www.cdc.gov/cancer/skin/images/social-media/CDC_124732_720px.jpg" width="70%">
+  <img src="https://isic-archive.com/images/isic_archive_banner.jpg" width="48%">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/MelanomaTypes.png" width="48%">
+</div>
+
+<div align="center">
+  <b>左图：ISIC数据库中真实的皮肤病变图像；右图：黑色素瘤的常见类型示意图。</b><br/>
+  <sub>图源分别来自 ISIC Archive 和 Wikimedia Commons。</sub>
 </div>
 
 ---
+
+📧 联系邮箱：**lzy13764449097@gmail.com**
+
+---
+
+## 🌞 简介（Introduction）
+
+本项目整理并持续更新皮肤癌研究中具有代表性的**深度学习方法、数据集、代码与论文资源**，特别关注 2024–2025 年度的新进展，包括：
+
+- Transformer 与 Diffusion 模型在医学图像中的应用
+- 多模态融合（图像 + 临床/文本/基因组）
+- 自监督学习与跨模态诊断
+- 精准分类、分割与检测任务
+
+希望为皮肤癌影像学研究人员提供一个高效检索与参考的开源平台。如有补充建议，欢迎联系邮箱📮：**lzy13764449097@gmail.com**
+
+
 
 ## 🌞 Introduction
 
