@@ -2,6 +2,7 @@
 
 <div align="center">
 
+
 [![](https://img.shields.io/github/stars/yourname/Skin-Cancer-Survey)](https://github.com/yourname/Skin-Cancer-Survey)  
 [![](https://img.shields.io/github/issues/yourname/Skin-Cancer-Survey)](https://github.com/yourname/Skin-Cancer-Survey)  
 [![](https://img.shields.io/github/license/yourname/Skin-Cancer-Survey)](https://github.com/yourname/Skin-Cancer-Survey)  
@@ -11,7 +12,7 @@
 ---
 
 <div align="center">
-  <img src="路径/ca651cd7-36b6-4516-a160-13c0aed8347d.png" width="80%">
+  <img src="data/HAM10000.png" width="80%">
 </div>
 
 <div align="center">
@@ -113,6 +114,7 @@ For collaboration or suggestions, feel free to contact us!
 - Rare lesion synthesis
 - Early screening and triage
 - Clinical explainability & uncertainty estimation
+
 
 ---
 
