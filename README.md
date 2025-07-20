@@ -94,7 +94,7 @@ For collaboration or suggestions, feel free to contact us!
 | 数据集名称 | 数据集特点 | 使用场景 | 链接 |
 |------------|------------|----------|------|
 | **HAM10000** | 最经典数据集，含10000张皮肤镜图像 | 多类皮肤病变分类任务 | [GitHub](https://github.com/ptschandl/HAM10000_dataset) |
-| **ISIC Archive** | 最新权威图像资源库，支持挑战赛数据 | 分割、分类、检测均适用 | [GitHub](https://github.com/udacity/dermatologist-ai/blob/master/isic_challenge) |
+| **ISIC Archive** | 最新权威图像资源库，支持挑战赛数据 | 分割、分类、检测均适用 | [GitHub](https://github.com/udacity/dermatologist-ai/tree/master) |
 | **MED-NODE** | 荷兰格罗宁根大学开发，图像分辨率较高 | 黑色素瘤 vs 痣 二分类 | [官网](https://www.cs.rug.nl/~imaging/databases/melanoma/) |
 | **PH2** | 葡萄牙数据集，含边界分割掩码 | 病灶分割与颜色分析 | [下载链接](https://gitcode.com/open-source-toolkit/3f18e/PH2Dataset) |
 | **DermaMNIST** | MedMNIST子集，适合轻量模型实验 | 轻量CNN/迁移学习测试 | [官网](https://medmnist.com/) |
