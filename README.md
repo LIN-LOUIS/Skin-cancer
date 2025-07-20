@@ -98,6 +98,8 @@ For collaboration or suggestions, feel free to contact us!
 | **MED-NODE** | 荷兰格罗宁根大学开发，图像分辨率较高 | 黑色素瘤 vs 痣 二分类 | [官网](https://www.cs.rug.nl/~imaging/databases/melanoma_naevi/) |
 | **PH2** | 葡萄牙数据集，含边界分割掩码 | 病灶分割与颜色分析 | [下载链接](https://gitcode.com/open-source-toolkit/3f18e/?utm_source=tools_gitcode&index=bottom&type=card&&isLogin=1) |
 | **DermaMNIST** | MedMNIST子集，适合轻量模型实验 | 轻量CNN/迁移学习测试 | [官网](https://medmnist.com/) |
+| **Derm7pt** | 基于皮肤镜7点检查法构建| 持病理评分 | [官网](https://github.com/jeremykawahara/derm7pt) |
+| **BCN20000** | 7类标签（含恶性）| 20000 张皮肤镜图像 | [官网](https://github.com/imatge-upc/BCN20000) |
 
 ---
 
