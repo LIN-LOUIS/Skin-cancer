@@ -110,6 +110,20 @@ For collaboration or suggestions, feel free to contact us!
 | SkinCancer       | 2022             | Classification              | Pathology    | 129,364 (29,419 skin cancer-related)         | jpg              | [Link](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.1022967/full) |
 | SKINL2           | 2019             | Classification              | Dermoscopy   | 330                                          | png              | [Link](https://www.it.pt/AutomaticPage?id=3459) |
 
+| 数据集名称        | 模型名称                             | 最高准确率（Accuracy） | 指标类型       |
+|------------------|--------------------------------------|------------------------|----------------|
+| ISIC 2016        | CNN                                  | 0.994                  | Accuracy       |
+| ISIC 2017        | CNN + AlexNet                        | 0.962                  | Accuracy       |
+| ISIC 2018        | MobileNet + Xception + ResNet50V2    | 0.920                  | Accuracy       |
+| ISIC 2019        | Inception-ResNet-based DCNN          | 0.970                  | Accuracy       |
+| ISIC 2020        | NASNet (Transfer Learning)           | 0.9985                 | Accuracy       |
+| ISIC 2024        | PanDerm                              | >0.980 (Weighted F1)   | Multi-class F1 |
+| HAM10000         | Hybrid U-Net + MobileNetV3           | 0.9886                 | Accuracy       |
+| PH2              | AlexNet                              | 0.980                  | Accuracy       |
+| PAD-UFES-20      | Vision Transformer + XAI             | 0.960                  | Accuracy       |
+| BCN20000         | PanDerm                              | ~0.950                 | AUROC          |
+| Derm7pt          | Soft-attention Multimodal Model      | 0.8304                 | Accuracy       |
+| Med-NODE         | ResNet                               | ~0.920                 | Accuracy       |
 
 
 ---
@@ -185,6 +199,26 @@ For collaboration or suggestions, feel free to contact us!
 | Mixed multimodal                           | Multimodal        | Not specified                                  | -        | -       | -       | -        | -           | Omics + imaging + clinical                    |
 | SkinGPT-4                                   | Multimodal        | 52,929 images with text                        | -        | -       | -       | -        | -           | GPT-4 + ViT + report generation               |
 | Reinforcement learning model               | RL-based          | HAM10000                                       | -        | -       | -       | -        | -           | Q-learning + Monte Carlo tree search          |
+
+## 当前主流皮肤癌AI方法发展方向
+| 方向                       | 代表方法/模型                     | 特点与能力描述                                                                 |
+|----------------------------|----------------------------------|---------------------------------------------------------------------------------|
+| 多模态大模型               | PanDerm, SkinGPT-4, MONET        | 融合皮肤镜、临床图、病理图等多模态数据，实现统一建模和多任务联合推理           |
+| Transformer模型           | SkinViT, Vision Transformer + SAM| 自注意力机制建模长程依赖，适用于复杂结构皮损，提升分类与分割能力                 |
+| 知识蒸馏与轻量化部署       | SkinDistilViT                    | 在保持精度的同时，显著降低计算资源和部署成本，适合移动端和边缘计算设备           |
+| 多任务学习/联合建模        | nSknRSUNet, DeepLab融合模型      | 支持分类+分割+检测等多任务同时学习，提高资源利用率和协同能力                    |
+| 可解释性增强模型（XAI）    | ViT + Grad-CAM, SkinGPT + Report | 提供热力图、文本解释、诊断概念输出，增强医生信任度与临床可协作性                 |
+| 自监督/弱监督学习          | MAE, SwAVDerm, MILAN             | 降低对大规模标注数据的依赖，适用于数据稀缺或标注代价高的场景                    |
+| 强化学习优化               | Q-learning + MCTS                | 自动探索推理路径和特征选择，提升决策策略的适应性，减少人工调整                   |
+
+## 皮肤癌数据集存在的五大提升空间
+| 方面                     | 问题描述                                                 | 当前状况或现象                                              |
+|--------------------------|----------------------------------------------------------|-------------------------------------------------------------|
+| 多模态数据缺乏统一整合   | 公开数据集大多为单一模态（如 dermoscopy 图像）           | TBP、病理图、临床照片等模态未充分融合，多模态建模难开展     |
+| 数据代表性不足           | 样本集中于浅肤色人群，病种、性别、年龄分布不均             | 例如 HAM10000 中白人肤色占比极高，深肤色病例严重不足         |
+| 纵向随访数据稀缺         | 缺少时间序列图像，难以实现病灶演变预测与复发建模           | 多数数据集为单时点图像，仅 SDDI/ComBineMel 提供部分随访数据  |
+| 病种类别覆盖不足         | 任务类别较少，无法覆盖临床实际中的数百种皮肤病分类         | 多数数据集（如 ISIC 系列）仅覆盖7–10类常见病变               |
+| 标注标准不统一           | 不同数据集的标签命名、分割边界质量与诊断标准差异大         | ISIC 与 PH2、Derm7pt 在标签格式与金标准诊断方面差异明显       |
 
 ---
 
