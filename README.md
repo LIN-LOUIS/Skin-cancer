@@ -115,7 +115,76 @@ For collaboration or suggestions, feel free to contact us!
 ---
 
 ## 🌀 Diffusion Models in Skin Imaging
+## Segmentation Models
+| Model Name                                   | Used Data                        | Dice    | Jaccard | Accuracy |
+|----------------------------------------------|----------------------------------|---------|---------|----------|
+| Transformer-based U-Net with inter-scale context fusion | ISIC 2017, ISIC 2018            | 0.9257  | -       | 0.9698   |
+| Improved U-shaped network                    | ISIC 2017                        | 0.9384  | 0.9679  | 0.9662   |
+| Robust optimization of SegNet                | ISIC 2016, ISIC 2017             | 0.925   | 0.875   | -        |
+| SegNet for melanoma lesion segmentation      | ISIC 2016, ISIC 2017             | -       | -       | 0.89     |
+| YOLO-v8                                      | PH2, ISIC 2017                   | -       | -       | 0.9867   |
+| nSknRSUNet                                    | MoleMap, HAM10000                | 0.9413  | -       | 0.9806   |
 
+## Classification and Detection Models
+| Model Name                                | Used Data                                     | Accuracy | F1 Score | Sensitivity | Specificity |
+|-------------------------------------------|-----------------------------------------------|----------|----------|-------------|-------------|
+| SkinFLNet                                  | Clinical images (Taiwan hospitals)            | 0.85     | 0.82     | 0.82        | 0.93        |
+| ResNet-50-based DCNN                       | HAM10000                                      | 0.8487   | 0.85     | -           | -           |
+| Inception-ResNet-based DCNN                | ISIC 2018–2020                                | 0.97     | 0.97     | 0.99        | 0.93        |
+| XAI                                         | Not specified                                 | -        | -        | -           | -           |
+| NASNet deep features                       | ISIC 2020                                     | 0.97     | -        | -           | -           |
+| NASNet transfer model                      | HAM10000                                      | 0.9985   | -        | -           | -           |
+| EfficientNetB0 + K-means                   | Kaggle                                        | 0.87     | -        | -           | -           |
+| EfficientNet (fuzzy ensemble)              | ISIC                                          | 0.8815   | -        | -           | -           |
+| Optimized MobileNet                        | Not specified                                 | -        | -        | -           | -           |
+| U-Net + MobileNet-V3                       | HAM10000                                      | 0.9886   | -        | 0.9635      | 0.9732      |
+| Deep CNN for pathologist-level classification | HAM10000, ISIC 2017, PAD-UFES-20           | 0.96     | 0.97     | 0.99        | 0.93        |
+| Optimized CNN                              | HAM10000                                      | 0.9778   | -        | -           | -           |
+| Modified falcon finch CNN                  | HAM10000                                      | 0.9652   | -        | 0.9669      | 0.9654      |
+
+## Transformer and Multimodal Models
+| Model Name                        | Used Data                              | Specialty                                  |
+|----------------------------------|----------------------------------------|--------------------------------------------|
+| SkinDistilViT                    | ISIC 2019                              | Knowledge distillation                     |
+| Soft-attention-based multimodal | Derm7pt                                | Soft attention module                      |
+| SkinViT                          | ISIC 2019                              | Outlooker + Transformer blocks             |
+| Vision transformer               | HAM10000                               | Self-attention mechanism                   |
+| Vision transformers + XAI        | HAM10000                               | Explainable decision process               |
+| MONET                            | 105,550 paired images                  | Conceptual annotation (image+text)         |
+| Mixed multimodal                 | Not specified                          | Genomic + imaging + clinical integration   |
+| SkinGPT-4                        | 52,929 paired images and notes         | LLM-based multimodal diagnosis assistant   |
+| Reinforcement learning model     | HAM10000                               | Q-learning + MCTS for optimization         |
+## Segmentation + Classification + Transformer/Multimodal
+| Model Name                                | Model Type        | Used Data                                     | Accuracy | Dice    | Jaccard | F1 Score | Sensitivity | Specificity | Specialty / Notes                             |
+|-------------------------------------------|-------------------|-----------------------------------------------|----------|---------|---------|----------|-------------|-------------|-----------------------------------------------|
+| Transformer-based U-Net                   | Segmentation      | ISIC 2017, ISIC 2018                           | 0.9698   | 0.9257  | -       | -        | -           | -           | Inter-scale context fusion                    |
+| Improved U-shaped network                 | Segmentation      | ISIC 2017                                     | 0.9662   | 0.9384  | 0.9679  | -        | -           | -           | Multiscale + residual                         |
+| Robust optimization of SegNet             | Segmentation      | ISIC 2016, ISIC 2017                           | -        | 0.925   | 0.875   | -        | -           | -           | Bayesian optimization                         |
+| SegNet for melanoma                       | Segmentation      | ISIC 2016, ISIC 2017                           | 0.89     | -       | -       | -        | -           | -           | Clinical deployability                        |
+| YOLO-v8                                   | Segmentation      | PH2, ISIC 2017                                 | 0.9867   | -       | -       | -        | -           | -           | Real-time detection                           |
+| nSknRSUNet                                 | Segmentation      | MoleMap, HAM10000                              | 0.9806   | 0.9413  | -       | -        | -           | -           | U-Net + DeepLab + residual                    |
+| SkinFLNet                                  | Classification    | Taiwan clinical images                         | 0.85     | -       | -       | 0.82     | 0.82        | 0.93        | Inception + ResNet fusion                     |
+| ResNet-50-based DCNN                       | Classification    | HAM10000                                       | 0.8487   | -       | -       | 0.85     | -           | -           | Feature extraction backbone                   |
+| Inception-ResNet-based DCNN                | Classification    | ISIC 2018–2020                                 | 0.97     | -       | -       | 0.97     | 0.99        | 0.93        | Multiscale + residual                         |
+| XAI                                         | Classification    | Not specified                                  | -        | -       | -       | -        | -           | -           | Text and region-based explanation             |
+| NASNet deep features                       | Classification    | ISIC 2020                                      | 0.97     | -       | -       | -        | -           | -           | Transfer learning                             |
+| NASNet transfer model                      | Classification    | HAM10000                                       | 0.9985   | -       | -       | -        | -           | -           | Optimized architecture                        |
+| EfficientNetB0 + K-means                   | Classification    | Kaggle skin datasets                           | 0.87     | -       | -       | -        | -           | -           | Clustering enhanced features                  |
+| EfficientNet (fuzzy ensemble)              | Classification    | ISIC                                           | 0.8815   | -       | -       | -        | -           | -           | Choquet fuzzy + macro F1 reward               |
+| Optimized MobileNet                        | Classification    | Not specified                                  | -        | -       | -       | -        | -           | -           | Pruned + quantized                            |
+| Hybrid U-Net + MobileNet-V3                | Classification    | HAM10000                                       | 0.9886   | -       | -       | -        | 0.9635      | 0.9732      | Fusion + Bayesian hyperparam optimization     |
+| Pathologist-level Deep CNN                 | Classification    | HAM10000, ISIC 2017, PAD-UFES-20               | 0.96     | -       | -       | 0.97     | 0.99        | 0.93        | On H&E-stained images                         |
+| Optimized CNN                              | Classification    | HAM10000                                       | 0.9778   | -       | -       | -        | -           | -           | Data augmentation                             |
+| Falcon Finch CNN                           | Classification    | HAM10000                                       | 0.9652   | -       | -       | -        | 0.9669      | 0.9654      | Inspired by nature optimization               |
+| SkinDistilViT                              | Transformer       | ISIC 2019                                      | -        | -       | -       | -        | -           | -           | Knowledge distillation from ViT               |
+| Soft-attention multimodal                  | Multimodal        | Derm7pt                                        | 0.8304   | -       | -       | -        | -           | Soft attention + trichotomous fusion          |
+| SkinViT                                     | Transformer       | ISIC 2019                                      | 0.9109   | -       | -       | -        | -           | Outlooker + transformer + MLP head            |
+| Vision Transformer                         | Transformer       | HAM10000                                       | 0.9615   | 0.9814  | 0.9601  | -        | -           | Segment Anything + ViT                        |
+| ViT + XAI                                   | Transformer       | HAM10000                                       | -        | -       | -       | -        | -           | Grad-CAM + interpretability                   |
+| MONET                                       | Multimodal        | 105,550 paired images                          | -        | -       | -       | -        | -           | Image-text concept matching                   |
+| Mixed multimodal                           | Multimodal        | Not specified                                  | -        | -       | -       | -        | -           | Omics + imaging + clinical                    |
+| SkinGPT-4                                   | Multimodal        | 52,929 images with text                        | -        | -       | -       | -        | -           | GPT-4 + ViT + report generation               |
+| Reinforcement learning model               | RL-based          | HAM10000                                       | -        | -       | -       | -        | -           | Q-learning + Monte Carlo tree search          |
 
 ---
 
