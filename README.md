@@ -91,24 +91,25 @@ For collaboration or suggestions, feel free to contact us!
 
 ## 📊 常用皮肤癌数据集总览（2024）
 
-| Dataset Name       | Number of Lesions (or Classes) | Size (Smallest) | Link                                                                                             |
-|--------------------|-------------------------------|------------------|--------------------------------------------------------------------------------------------------|
-| ISIC 2016          | 2                             | 1024 × 768       | [Link](https://challenge.isic-archive.com/data/#2016)                                           |
-| ISIC 2017          | 1                             | 540 × 576        | [Link](https://challenge.isic-archive.com/data/#2017)                                           |
-| ISIC 2018, 36      | 7                             | 1022 × 767       | [Link](https://challenge.isic-archive.com/data/#2018)                                           |
-| ISIC 2019, 36, 37  | 8                             | 256 × 256        | [Link](https://challenge.isic-archive.com/data/#2019)                                           |
-| ISIC 2020          | 2                             | 640 × 480        | [Link](https://challenge.isic-archive.com/data/#2020)                                           |
-| ISIC 2024          | 2                             | 133 × 133        | [Link](https://challenge2024.isic-archive.com/)                                                 |
-| BCN20000           | Not specified                 | 1024 × 1024      | [Link](https://figshare.com/articles/journal_contribution/BCN20000_Dermoscopic_Lesions_in_the_Wild/24140028/1) |
-| HAM10000           | 7                             | 450 × 600        | [Link](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T)         |
-| PH2                | 1                             | 560 × 768        | [Link](https://www.fc.up.pt/addi/ph2%20database.html)                                           |
-| MED-NODE           | 2                             | 201 × 257        | [Link](https://www.cs.rug.nl/~imaging/databases/melanoma_naevi/)                                |
-| DERM7PT            | 19                            | 474 × 626        | [Link](https://derm.cs.sfu.ca/Welcome.html)                                                     |
-| PAD-UFES-20        | 6                             | 147 × 147        | [Link](https://data.mendeley.com/datasets/zr7vgbcyr2/1)                                         |
-| Fitzpatrick17, 39  | 3                             | 66 × 130         | [Link](https://github.com/mattgroh/fitzpatrick17k)                                              |
-| MRA-MIDAS          | 16                            | iPhone/iPad Photo| [Link](https://aimi.stanford.edu/datasets/mra-midas-Multimodal-Image-Dataset-for-AI-based-Skin-Cancer) |
-| SkinCancer         | 16                            | 395 × 395        | [Link](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.1022967/full)   |
-| SKINL2             | 8                             | 7716 × 5364      | [Link](https://www.it.pt/AutomaticPage?id=3459)                                                 |
+| Dataset Name     | Publication Year | Task Type                  | Modality     | Number of Images                            | Image Format     | Link |
+|------------------|------------------|----------------------------|--------------|----------------------------------------------|------------------|------|
+| ISIC 2016        | 2016             | Classification, Segmentation | Dermoscopy   | 900 training, 379 testing                    | jpeg, png        | [Link](https://challenge.isic-archive.com/data/#2016) |
+| ISIC 2017        | 2017             | Classification, Segmentation | Dermoscopy   | 2000 training, 150 validation, 600 testing   | jpeg, png        | [Link](https://challenge.isic-archive.com/data/#2017) |
+| ISIC 2018        | 2018             | Classification, Segmentation | Dermoscopy   | 2594 (segmentation), 10,015 (classification) | jpeg, png        | [Link](https://challenge.isic-archive.com/data/#2018) |
+| ISIC 2019        | 2019             | Classification              | Dermoscopy   | 25,331 training                              | jpeg             | [Link](https://challenge.isic-archive.com/data/#2019) |
+| ISIC 2020        | 2020             | Classification              | Dermoscopy   | 33,126 training, 10,982 testing              | jpeg             | [Link](https://challenge.isic-archive.com/data/#2020) |
+| ISIC 2024        | 2024             | Classification              | Photograph   | 401,059                                      | jpg              | [Link](https://challenge2024.isic-archive.com/) |
+| BCN20000         | 2019             | Classification              | Dermoscopy   | 12,413 training, 6,533 testing               | jpg              | [Link](https://figshare.com/articles/journal_contribution/BCN20000_Dermoscopic_Lesions_in_the_Wild/24140028/1) |
+| HAM10000         | 2018             | Classification              | Dermoscopy   | 10,015                                       | jpeg             | [Link](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T) |
+| PH2              | 2018             | Segmentation                | Dermoscopy   | 200                                          | png              | [Link](https://www.fc.up.pt/addi/ph2%20database.html) |
+| MED-NODE         | 2015             | Classification              | Dermoscopy   | 170                                          | jpeg             | [Link](https://www.cs.rug.nl/~imaging/databases/melanoma_naevi/) |
+| DERM7PT          | 2018             | Classification              | Dermoscopy   | 2,000                                        | jpg              | [Link](https://derm.cs.sfu.ca/Welcome.html) |
+| PAD-UFES-20      | 2020             | Classification              | Photograph   | 2,298                                        | png              | [Link](https://data.mendeley.com/datasets/zr7vgbcyr2/1) |
+| Fitzpatrick17    | 2022             | Classification              | Dermoscopy   | 16,577                                       | jpg              | [Link](https://github.com/mattgroh/fitzpatrick17k) |
+| MRA-MIDAS        | 2024             | Classification              | Photograph   | 2,919                                        | jpeg, jpg        | [Link](https://aimi.stanford.edu/datasets/mra-midas-Multimodal-Image-Dataset-for-AI-based-Skin-Cancer) |
+| SkinCancer       | 2022             | Classification              | Pathology    | 129,364 (29,419 skin cancer-related)         | jpg              | [Link](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.1022967/full) |
+| SKINL2           | 2019             | Classification              | Dermoscopy   | 330                                          | png              | [Link](https://www.it.pt/AutomaticPage?id=3459) |
+
 
 
 ---
