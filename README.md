@@ -91,15 +91,25 @@ For collaboration or suggestions, feel free to contact us!
 
 ## 📊 常用皮肤癌数据集总览（2024）
 
-| 数据集名称 | 数据集特点 | 使用场景 | 链接 |
-|------------|------------|----------|------|
-| **HAM10000** | 最经典数据集，含10000张皮肤镜图像 | 多类皮肤病变分类任务 | [GitHub](https://github.com/ptschandl/HAM10000_dataset) |
-| **ISIC Archive** | 最新权威图像资源库，支持挑战赛数据 | 分割、分类、检测均适用 | [GitHub](https://github.com/udacity/dermatologist-ai/tree/master) |
-| **MED-NODE** | 荷兰格罗宁根大学开发，图像分辨率较高 | 黑色素瘤 vs 痣 二分类 | [官网](https://www.cs.rug.nl/~imaging/databases/melanoma_naevi/) |
-| **PH2** | 葡萄牙数据集，含边界分割掩码 | 病灶分割与颜色分析 | [下载链接](https://gitcode.com/open-source-toolkit/3f18e/?utm_source=tools_gitcode&index=bottom&type=card&&isLogin=1) |
-| **DermaMNIST** | MedMNIST子集，适合轻量模型实验 | 轻量CNN/迁移学习测试 | [官网](https://medmnist.com/) |
-| **Derm7pt** | 基于皮肤镜7点检查法构建| 持病理评分 | [官网](https://github.com/jeremykawahara/derm7pt) |
-| **BCN20000** | 7类标签（含恶性）| 20000 张皮肤镜图像 | [官网](https://github.com/imatge-upc/BCN20000) |
+| Dataset Name       | Number of Lesions (or Classes) | Size (Smallest) | Link                                                                                             |
+|--------------------|-------------------------------|------------------|--------------------------------------------------------------------------------------------------|
+| ISIC 2016          | 2                             | 1024 × 768       | [Link](https://challenge.isic-archive.com/data/#2016)                                           |
+| ISIC 2017          | 1                             | 540 × 576        | [Link](https://challenge.isic-archive.com/data/#2017)                                           |
+| ISIC 2018, 36      | 7                             | 1022 × 767       | [Link](https://challenge.isic-archive.com/data/#2018)                                           |
+| ISIC 2019, 36, 37  | 8                             | 256 × 256        | [Link](https://challenge.isic-archive.com/data/#2019)                                           |
+| ISIC 2020          | 2                             | 640 × 480        | [Link](https://challenge.isic-archive.com/data/#2020)                                           |
+| ISIC 2024          | 2                             | 133 × 133        | [Link](https://challenge2024.isic-archive.com/)                                                 |
+| BCN20000           | Not specified                 | 1024 × 1024      | [Link](https://figshare.com/articles/journal_contribution/BCN20000_Dermoscopic_Lesions_in_the_Wild/24140028/1) |
+| HAM10000           | 7                             | 450 × 600        | [Link](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T)         |
+| PH2                | 1                             | 560 × 768        | [Link](https://www.fc.up.pt/addi/ph2%20database.html)                                           |
+| MED-NODE           | 2                             | 201 × 257        | [Link](https://www.cs.rug.nl/~imaging/databases/melanoma_naevi/)                                |
+| DERM7PT            | 19                            | 474 × 626        | [Link](https://derm.cs.sfu.ca/Welcome.html)                                                     |
+| PAD-UFES-20        | 6                             | 147 × 147        | [Link](https://data.mendeley.com/datasets/zr7vgbcyr2/1)                                         |
+| Fitzpatrick17, 39  | 3                             | 66 × 130         | [Link](https://github.com/mattgroh/fitzpatrick17k)                                              |
+| MRA-MIDAS          | 16                            | iPhone/iPad Photo| [Link](https://aimi.stanford.edu/datasets/mra-midas-Multimodal-Image-Dataset-for-AI-based-Skin-Cancer) |
+| SkinCancer         | 16                            | 395 × 395        | [Link](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.1022967/full)   |
+| SKINL2             | 8                             | 7716 × 5364      | [Link](https://www.it.pt/AutomaticPage?id=3459)                                                 |
+
 
 ---
 
