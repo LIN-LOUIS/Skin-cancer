@@ -109,6 +109,7 @@ For collaboration or suggestions, feel free to contact us!
 | MRA-MIDAS        | 2024             | Classification              | Photograph   | 2,919                                        | jpeg, jpg        | [Link](https://aimi.stanford.edu/datasets/mra-midas-Multimodal-Image-Dataset-for-AI-based-Skin-Cancer) |
 | SkinCancer       | 2022             | Classification              | Pathology    | 129,364 (29,419 skin cancer-related)         | jpg              | [Link](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.1022967/full) |
 | SKINL2           | 2019             | Classification              | Dermoscopy   | 330                                          | png              | [Link](https://www.it.pt/AutomaticPage?id=3459) |
+| SDDI1           | 2024             | Classification              | Dermoscopy   | 585                                          | png              | [Link](https://api.isic-archive.com/collections/328/) |
 
 | 数据集名称        | 模型名称                             | 最高准确率（Accuracy） | 指标类型       |
 |------------------|--------------------------------------|------------------------|----------------|
